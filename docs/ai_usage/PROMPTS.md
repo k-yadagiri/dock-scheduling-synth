@@ -1,40 +1,58 @@
 # AI Usage Disclosure
 
-## Important notice — redaction
-The complete prompt history is **not** published here. The prompts in this development session contained the text of a confidential assessment brief, recruitment correspondence and attachments. Publishing that material is restricted, so those portions have been **redacted and replaced with short non-confidential summaries**. This file is therefore a partial, honest record, not the full prompt log. If the assessor requires the complete prompt history, it is retained privately and can be provided through a channel authorized by the assessor rather than published publicly.
+## 1. AI Tools Used
 
-## AI tool used
-- **Claude** (Anthropic), used through a Claude Code agent session. This is the only AI tool recorded in this session. No other AI tools are claimed here; any use outside this session is not covered by this log.
+Two AI tools assisted during the development of this project.
 
-## What the AI assisted with
-- Designing and writing the synthetic-data generator (`generate.py`), the schema/data dictionary source (`schema.py`) and the validator/metrics module (`validate.py`).
-- Writing the automated tests, README, Makefile and data documentation.
-- Generating the datasets, SQL seed files, ground-truth files, validation/metrics reports and reproducibility report by running the code.
-- Packaging the project into ZIP files.
-- Submission-readiness edits (`.gitignore`, closing file handles, this disclosure).
+### ChatGPT (OpenAI)
 
-The author is responsible for reviewing, running and submitting the work.
+ChatGPT was used for:
+- Understanding and organizing project requirements.
+- Planning the project architecture and implementation approach.
+- Discussing database design, data generation, scheduling, simulation and validation.
+- Preparing development prompts and instructions for Claude.
+- Reviewing project structure and submission readiness.
+- Identifying documentation and testing improvements.
 
-## Prompts in this session (redacted where necessary)
+### Claude (Anthropic)
 
-### Prompt 1 — Initial build request  *(assessment text redacted)*
-- **Redacted summary:** The user attached the assessment brief and related material (not reproduced here) and asked the assistant to read it and build a project covering all of its requirements: a synthetic-data project for dock/yard/labor appointment scheduling, delivered as a ZIP.
-- **Non-confidential portion preserved verbatim:** "iam giving the full details about the project and iwant project in zip file  and dont use more tokens"
+Claude was used for:
+- Implementing the Python project.
+- Developing the synthetic data generator, database schema and validation modules.
+- Creating automated tests and technical documentation.
+- Generating synthetic datasets, SQL files, ground-truth records and reports.
+- Running tests and reproducibility checks.
+- Packaging the project into ZIP archives.
 
-### Prompt 2 — Submission-readiness update
-Verbatim (contains no assessment content):
-```
-Please make a final submission-readiness update to the existing project without rewriting or changing the working scheduling logic.
+## 2. AI-Assisted Development Activities
 
-1. Add `.gitignore` for Python cache files, virtual environments and temporary files.
-2. Create `docs/ai_usage/PROMPTS.md` using the actual prompts from this development session, if available. Do not invent or fabricate prompts.
-3. Fix ResourceWarnings caused by unclosed file handles in `generate.py` and `validate.py`.
-4. Review the README and ensure all execution commands are correct.
-5. Run all nine tests, full validation and reproducibility verification again.
-6. Create an updated ZIP named `dock-scheduling-synth-final.zip`.
+The AI tools assisted with the following development activities:
 
-Do not remove existing functionality or generated output data. Report actual test results and any remaining limitations.
-```
+1. Project planning and architecture design.
+2. Data modelling and entity relationships.
+3. Synthetic data generation.
+4. Logistics appointment scheduling logic.
+5. Event simulation and exception handling.
+6. Data validation and automated testing.
+7. Metrics generation and reporting.
+8. Documentation and submission preparation.
 
-### Prompt 3 — Confidentiality fix
-- **Summary:** The user asked the assistant to inspect the project for confidential assessment wording and recruitment/candidate information, redact this AI usage file accordingly while keeping an honest disclosure, leave the implementation and generated data unchanged, re-run the tests, validation and reproducibility check, and produce `dock-scheduling-synth-submission.zip` without overwriting earlier ZIPs. (The prompt text itself is summarized rather than quoted.)
+## 3. Human Responsibility
+
+AI tools were used as development assistants. The candidate is responsible for reviewing the submitted implementation, understanding the code, checking generated outputs and explaining the technical decisions during any subsequent evaluation.
+
+## 4. Prompt History and Confidentiality
+
+This document provides an honest summary of AI usage during project development.
+
+Some prompts contained confidential assessment instructions, problem statements and recruitment-related information. Such content has not been reproduced in this public repository.
+
+Confidential portions of the prompt history have been excluded from public documentation. The original records are retained privately and can be provided through a submission channel authorized by the assessment organizer, if requested.
+
+No fictional prompts, conversations or development activities are presented as actual records.
+
+## 5. Declaration
+
+I acknowledge the use of ChatGPT and Claude as AI-assisted development tools for this project.
+
+I take responsibility for the submitted code, project outputs and technical explanations.
