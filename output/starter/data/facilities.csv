@@ -1,0 +1,4 @@
+facility_id,facility_name,city,timezone,open_hour,close_hour,effective_from,effective_to,status
+FAC-001,Atlanta Distribution Center,Atlanta,America/New_York,6,22,2025-07-28,,ACTIVE
+FAC-002,Chicago Distribution Center,Chicago,America/Chicago,6,22,2025-07-28,,ACTIVE
+FAC-003,Dallas Distribution Center,Dallas,America/Chicago,6,22,2025-07-28,,ACTIVE

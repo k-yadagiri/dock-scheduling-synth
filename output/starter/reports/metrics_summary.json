@@ -1,0 +1,61 @@
+{
+ "appointments": 1000,
+ "status_counts": {
+  "COMPLETED": 911,
+  "REJECTED": 58,
+  "NO_SHOW": 29,
+  "SCHEDULED": 2
+ },
+ "rejection_rate": 0.058,
+ "no_show_rate_of_scheduled": 0.0308,
+ "early_arrival_rate_of_completed": 0.1559,
+ "late_arrival_rate_of_completed": 0.09,
+ "wait_minutes_checkin_to_service": {
+  "mean": 30.0,
+  "p50": 13,
+  "p90": 89,
+  "max": 1005
+ },
+ "dwell_minutes_checkin_to_departure": {
+  "mean": 115.5,
+  "p90": 182
+ },
+ "service_minutes_mean": 69.1,
+ "dock_utilization_overall": 0.1615,
+ "dock_utilization_by_facility": {
+  "FAC-001": 0.1538,
+  "FAC-002": 0.1584,
+  "FAC-003": 0.172
+ },
+ "hourly_dock_utilization": {
+  "3": 0.0033,
+  "6": 0.0454,
+  "7": 0.0998,
+  "8": 0.1942,
+  "9": 0.2201,
+  "10": 0.2183,
+  "11": 0.1765,
+  "12": 0.1566,
+  "13": 0.1827,
+  "14": 0.2283,
+  "15": 0.2447,
+  "16": 0.2078,
+  "17": 0.1751,
+  "18": 0.1287,
+  "19": 0.0895,
+  "20": 0.0765,
+  "21": 0.0409,
+  "22": 0.0094
+ },
+ "exceptions_by_type_cause": {
+  "DOCK_CONGESTION/PRIOR_OVERRUN": 49,
+  "EARLY_ARRIVAL/CARRIER_EARLY": 142,
+  "GATE_CONGESTION/PEAK_GATE_QUEUE": 14,
+  "LATE_ARRIVAL/CARRIER_LATE": 82,
+  "NO_SHOW/CARRIER_NO_SHOW": 29,
+  "REJECTED_NO_CAPACITY/LABOR_CAPACITY": 2,
+  "REJECTED_NO_CAPACITY/NO_DOCK_CAPACITY": 56
+ },
+ "exceptions_total": 374,
+ "events_total": 5584
+}

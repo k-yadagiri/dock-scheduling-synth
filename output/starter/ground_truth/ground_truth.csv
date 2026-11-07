@@ -1,0 +1,13 @@
+gt_id,issue_type,entity_type,entity_id,appointment_id,expected_decision,rule_violated,notes
+GT-0001,OVERLAPPING_APPOINTMENT_EXCEEDS_DOCK_CAPACITY,Appointment,APPT-2026-000175,APPT-2026-000175,REJECT_OR_RESCHEDULE,dock capacity = 1 concurrent appointment,injected; overlaps APPT-2026-000588 on DOCK-FAC-003-008
+GT-0002,OVERLAPPING_APPOINTMENT_EXCEEDS_DOCK_CAPACITY,Appointment,APPT-2026-000588,APPT-2026-000588,KEEP_ORIGINAL_BOOKING,dock capacity = 1 concurrent appointment,peer of injected APPT-2026-000175
+GT-0003,OVERLAPPING_APPOINTMENT_EXCEEDS_DOCK_CAPACITY,Appointment,APPT-2026-000445,APPT-2026-000445,REJECT_OR_RESCHEDULE,dock capacity = 1 concurrent appointment,injected; overlaps APPT-2026-000614 on DOCK-FAC-001-007
+GT-0004,OVERLAPPING_APPOINTMENT_EXCEEDS_DOCK_CAPACITY,Appointment,APPT-2026-000614,APPT-2026-000614,KEEP_ORIGINAL_BOOKING,dock capacity = 1 concurrent appointment,peer of injected APPT-2026-000445
+GT-0005,INCOMPATIBLE_LOAD_ASSIGNED,Appointment,APPT-2026-000400,APPT-2026-000400,REASSIGN_TO_COMPATIBLE_DOCK,dock must hold DockHandlingCapability for appointment handling_req_id,"FROZEN/NONE load on DOCK-FAC-001-010 (refrigerated=False, hazmat=False)"
+GT-0006,INCOMPATIBLE_LOAD_ASSIGNED,Appointment,APPT-2026-000862,APPT-2026-000862,REASSIGN_TO_COMPATIBLE_DOCK,dock must hold DockHandlingCapability for appointment handling_req_id,"AMBIENT/CORROSIVE load on DOCK-FAC-003-002 (refrigerated=False, hazmat=False)"
+GT-0007,CHECKIN_BEFORE_APPOINTMENT_DATE,CheckInEvent,CHECK-APPT-2026-000999-02,APPT-2026-000999,FLAG_INVALID_CHECKIN,check-in date must be >= planned_start date,check-in moved to 22:00 previous day
+GT-0008,CHECKIN_BEFORE_APPOINTMENT_DATE,CheckInEvent,CHECK-APPT-2026-000061-02,APPT-2026-000061,FLAG_INVALID_CHECKIN,check-in date must be >= planned_start date,check-in moved to 22:00 previous day
+GT-0009,LABOR_SHIFT_NOT_AVAILABLE,Appointment,APPT-2026-000717,APPT-2026-000717,RESCHEDULE_INTO_SHIFT,planned window must lie inside a LaborShift with crews_available>=1,planned_start moved to 03:00 (no shift)
+GT-0010,LABOR_SHIFT_NOT_AVAILABLE,Appointment,APPT-2026-000851,APPT-2026-000851,RESCHEDULE_INTO_SHIFT,planned window must lie inside a LaborShift with crews_available>=1,planned_start moved to 03:00 (no shift)
+GT-0011,NO_SHOW_NOT_RECORDED,Appointment,APPT-2026-000691,APPT-2026-000691,RECORD_NO_SHOW(CARRIER_NO_SHOW),SCHEDULED appointment past planned_end with no check-in must have NO_SHOW event,NO_SHOW event/exception removed
+GT-0012,NO_SHOW_NOT_RECORDED,Appointment,APPT-2026-000846,APPT-2026-000846,RECORD_NO_SHOW(CARRIER_NO_SHOW),SCHEDULED appointment past planned_end with no check-in must have NO_SHOW event,NO_SHOW event/exception removed

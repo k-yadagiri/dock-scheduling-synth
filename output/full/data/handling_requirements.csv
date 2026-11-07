@@ -1,0 +1,10 @@
+handling_req_id,temp_class,hazmat_class,base_service_min,per_pallet_min,requires_reefer_dock,requires_hazmat_dock
+HR-001,AMBIENT,NONE,20,2.0,false,false
+HR-002,AMBIENT,FLAMMABLE,35,2.5,false,true
+HR-003,AMBIENT,CORROSIVE,35,2.5,false,true
+HR-004,CHILLED,NONE,30,2.5,true,false
+HR-005,CHILLED,FLAMMABLE,45,3.0,true,true
+HR-006,CHILLED,CORROSIVE,45,3.0,true,true
+HR-007,FROZEN,NONE,35,3.0,true,false
+HR-008,FROZEN,FLAMMABLE,50,3.5,true,true
+HR-009,FROZEN,CORROSIVE,50,3.5,true,true

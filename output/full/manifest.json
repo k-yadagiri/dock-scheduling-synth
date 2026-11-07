@@ -1,0 +1,51 @@
+{
+ "seed": 20261022,
+ "parameters": {
+  "n_fac": 10,
+  "docks_per": 10,
+  "n_appt": 20000,
+  "days": 60
+ },
+ "generator_command": "python generate.py --scale full --out output/full --verify-repro",
+ "python": "stdlib only (no external packages)",
+ "source_manifest": {
+  "external_data_used": false,
+  "note": "Fully synthetic. No public datasets ingested; no personal/confidential data. Domain rules (dock capacity, reefer/hazmat compatibility, labor shifts) are original simplifications."
+ },
+ "row_counts": {
+  "facilities": 10,
+  "docks": 100,
+  "yard_slots": 160,
+  "carriers": 40,
+  "vehicles": 413,
+  "handling_requirements": 9,
+  "dock_handling_capabilities": 320,
+  "labor_shifts": 1200,
+  "appointments": 20000,
+  "shipments": 26049,
+  "check_in_events": 107505,
+  "exceptions": 8680
+ },
+ "files": {
+  "data/appointments.csv": "d3dfeb7106d70692514bb5110857c6b9e503ba3fe9bb536ea3a8c34df41ffc21",
+  "data/carriers.csv": "46eea8f0f78adaf7dbb88384dac158ba02337f94a78f010f9064021b81336826",
+  "data/check_in_events.csv": "777ab95fa1f14b23e2ce1e16eb335d36d14037a11aa1bbd1329bf57ddeaa995b",
+  "data/dock_handling_capabilities.csv": "e074c578dc18eac9050c58eed2c171a7bae9de4d9a05318fe7bd8dd6e7d56e34",
+  "data/docks.csv": "0be568414b769f650621d33efcd7df3971a2643910f9ab4f03014f5c34067c3c",
+  "data/exceptions.csv": "ba830c0ff95a8a77e49a981959eee8f7e577a133e8afbcf2a46a7d010c58a34f",
+  "data/facilities.csv": "3027421cfb91fa43d19b199167b4ec2e6de90683838260b698287d1a6a058697",
+  "data/handling_requirements.csv": "b1e4c15a99d6604af6a31ad1d5aba6d1db91feac4f3ddf9655a81927afebe344",
+  "data/labor_shifts.csv": "2ef400585e4bdb06e6bd2c64a1efaf064dad4d2d7314ec9dadf1e19e9dfd330b",
+  "data/shipments.csv": "85326965623ed68ee943c18a7df5d10273527cf018e30b3fad0906ebd1d1122f",
+  "data/vehicles.csv": "a85ac3e4b450831002f7d142dd7592817abec53890f038446ed9031a6545b3d8",
+  "data/yard_slots.csv": "c9a5fb3870be0309b5e2a0c0d392eae7c64e77dc3c10a787eaf03f7694fd1cb3",
+  "docs/data_dictionary.md": "258fb82c6ede07bf12505029ec2d26cf758fd2e0ab7a33f825b115ce016abe8e",
+  "ground_truth/ground_truth.csv": "fdff674a7bf62289750d11c873369dbdc8794bb439d641b67281f2aa1e6173a0",
+  "ground_truth/ground_truth.json": "2119a56c1cb5cbe1ca3616281b7d1cc366c52b4e4881ba4c5e75a1beae7c0c3a",
+  "ground_truth/outcome_labels.csv": "46936feebe2300bbe5266390d211562d3e61a4c0bc3cced51621c9e8996970cd",
+  "reports/metrics_summary.json": "26abb9372bbbb48053a22a4861376eda5ca033520f50c7a5a3b4140115244ec5",
+  "reports/validation_summary.json": "a6e377cc7229e3cd886e5f2a572cf3febb0638a16e3a805cfa97def584ca6887",
+  "sql/schema.sql": "07c9a1f7f8405908bbf503a7991ce43d08075562788b3d872c49d201fc670d5e",
+  "sql/seed.sql": "c90339019ceccb146cfdcf1d2259be7a88cda7f664771441f9e7f365195e7f00"
+ }
+}

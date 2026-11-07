@@ -1,0 +1,122 @@
+[
+ {
+  "gt_id": "GT-0001",
+  "issue_type": "OVERLAPPING_APPOINTMENT_EXCEEDS_DOCK_CAPACITY",
+  "entity_type": "Appointment",
+  "entity_id": "APPT-2026-000175",
+  "appointment_id": "APPT-2026-000175",
+  "expected_decision": "REJECT_OR_RESCHEDULE",
+  "rule_violated": "dock capacity = 1 concurrent appointment",
+  "notes": "injected; overlaps APPT-2026-000588 on DOCK-FAC-003-008"
+ },
+ {
+  "gt_id": "GT-0002",
+  "issue_type": "OVERLAPPING_APPOINTMENT_EXCEEDS_DOCK_CAPACITY",
+  "entity_type": "Appointment",
+  "entity_id": "APPT-2026-000588",
+  "appointment_id": "APPT-2026-000588",
+  "expected_decision": "KEEP_ORIGINAL_BOOKING",
+  "rule_violated": "dock capacity = 1 concurrent appointment",
+  "notes": "peer of injected APPT-2026-000175"
+ },
+ {
+  "gt_id": "GT-0003",
+  "issue_type": "OVERLAPPING_APPOINTMENT_EXCEEDS_DOCK_CAPACITY",
+  "entity_type": "Appointment",
+  "entity_id": "APPT-2026-000445",
+  "appointment_id": "APPT-2026-000445",
+  "expected_decision": "REJECT_OR_RESCHEDULE",
+  "rule_violated": "dock capacity = 1 concurrent appointment",
+  "notes": "injected; overlaps APPT-2026-000614 on DOCK-FAC-001-007"
+ },
+ {
+  "gt_id": "GT-0004",
+  "issue_type": "OVERLAPPING_APPOINTMENT_EXCEEDS_DOCK_CAPACITY",
+  "entity_type": "Appointment",
+  "entity_id": "APPT-2026-000614",
+  "appointment_id": "APPT-2026-000614",
+  "expected_decision": "KEEP_ORIGINAL_BOOKING",
+  "rule_violated": "dock capacity = 1 concurrent appointment",
+  "notes": "peer of injected APPT-2026-000445"
+ },
+ {
+  "gt_id": "GT-0005",
+  "issue_type": "INCOMPATIBLE_LOAD_ASSIGNED",
+  "entity_type": "Appointment",
+  "entity_id": "APPT-2026-000400",
+  "appointment_id": "APPT-2026-000400",
+  "expected_decision": "REASSIGN_TO_COMPATIBLE_DOCK",
+  "rule_violated": "dock must hold DockHandlingCapability for appointment handling_req_id",
+  "notes": "FROZEN/NONE load on DOCK-FAC-001-010 (refrigerated=False, hazmat=False)"
+ },
+ {
+  "gt_id": "GT-0006",
+  "issue_type": "INCOMPATIBLE_LOAD_ASSIGNED",
+  "entity_type": "Appointment",
+  "entity_id": "APPT-2026-000862",
+  "appointment_id": "APPT-2026-000862",
+  "expected_decision": "REASSIGN_TO_COMPATIBLE_DOCK",
+  "rule_violated": "dock must hold DockHandlingCapability for appointment handling_req_id",
+  "notes": "AMBIENT/CORROSIVE load on DOCK-FAC-003-002 (refrigerated=False, hazmat=False)"
+ },
+ {
+  "gt_id": "GT-0007",
+  "issue_type": "CHECKIN_BEFORE_APPOINTMENT_DATE",
+  "entity_type": "CheckInEvent",
+  "entity_id": "CHECK-APPT-2026-000999-02",
+  "appointment_id": "APPT-2026-000999",
+  "expected_decision": "FLAG_INVALID_CHECKIN",
+  "rule_violated": "check-in date must be >= planned_start date",
+  "notes": "check-in moved to 22:00 previous day"
+ },
+ {
+  "gt_id": "GT-0008",
+  "issue_type": "CHECKIN_BEFORE_APPOINTMENT_DATE",
+  "entity_type": "CheckInEvent",
+  "entity_id": "CHECK-APPT-2026-000061-02",
+  "appointment_id": "APPT-2026-000061",
+  "expected_decision": "FLAG_INVALID_CHECKIN",
+  "rule_violated": "check-in date must be >= planned_start date",
+  "notes": "check-in moved to 22:00 previous day"
+ },
+ {
+  "gt_id": "GT-0009",
+  "issue_type": "LABOR_SHIFT_NOT_AVAILABLE",
+  "entity_type": "Appointment",
+  "entity_id": "APPT-2026-000717",
+  "appointment_id": "APPT-2026-000717",
+  "expected_decision": "RESCHEDULE_INTO_SHIFT",
+  "rule_violated": "planned window must lie inside a LaborShift with crews_available>=1",
+  "notes": "planned_start moved to 03:00 (no shift)"
+ },
+ {
+  "gt_id": "GT-0010",
+  "issue_type": "LABOR_SHIFT_NOT_AVAILABLE",
+  "entity_type": "Appointment",
+  "entity_id": "APPT-2026-000851",
+  "appointment_id": "APPT-2026-000851",
+  "expected_decision": "RESCHEDULE_INTO_SHIFT",
+  "rule_violated": "planned window must lie inside a LaborShift with crews_available>=1",
+  "notes": "planned_start moved to 03:00 (no shift)"
+ },
+ {
+  "gt_id": "GT-0011",
+  "issue_type": "NO_SHOW_NOT_RECORDED",
+  "entity_type": "Appointment",
+  "entity_id": "APPT-2026-000691",
+  "appointment_id": "APPT-2026-000691",
+  "expected_decision": "RECORD_NO_SHOW(CARRIER_NO_SHOW)",
+  "rule_violated": "SCHEDULED appointment past planned_end with no check-in must have NO_SHOW event",
+  "notes": "NO_SHOW event/exception removed"
+ },
+ {
+  "gt_id": "GT-0012",
+  "issue_type": "NO_SHOW_NOT_RECORDED",
+  "entity_type": "Appointment",
+  "entity_id": "APPT-2026-000846",
+  "appointment_id": "APPT-2026-000846",
+  "expected_decision": "RECORD_NO_SHOW(CARRIER_NO_SHOW)",
+  "rule_violated": "SCHEDULED appointment past planned_end with no check-in must have NO_SHOW event",
+  "notes": "NO_SHOW event/exception removed"
+ }
+]

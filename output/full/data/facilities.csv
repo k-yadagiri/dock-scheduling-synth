@@ -1,0 +1,11 @@
+facility_id,facility_name,city,timezone,open_hour,close_hour,effective_from,effective_to,status
+FAC-001,Atlanta Distribution Center,Atlanta,America/New_York,6,22,2025-07-28,,ACTIVE
+FAC-002,Chicago Distribution Center,Chicago,America/Chicago,6,22,2025-07-28,,ACTIVE
+FAC-003,Dallas Distribution Center,Dallas,America/Chicago,6,22,2025-07-28,,ACTIVE
+FAC-004,Denver Distribution Center,Denver,America/Denver,5,21,2025-07-28,,ACTIVE
+FAC-005,Phoenix Distribution Center,Phoenix,America/Phoenix,7,23,2025-07-28,,ACTIVE
+FAC-006,Seattle Distribution Center,Seattle,America/Los_Angeles,6,22,2025-07-28,,ACTIVE
+FAC-007,Columbus Distribution Center,Columbus,America/New_York,6,22,2025-07-28,,ACTIVE
+FAC-008,Memphis Distribution Center,Memphis,America/Chicago,5,21,2025-07-28,,ACTIVE
+FAC-009,Reno Distribution Center,Reno,America/Los_Angeles,7,23,2025-07-28,,ACTIVE
+FAC-010,Newark Distribution Center,Newark,America/New_York,6,22,2025-07-28,,ACTIVE

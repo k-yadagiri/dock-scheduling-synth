@@ -1,0 +1,75 @@
+{
+ "appointments": 20000,
+ "status_counts": {
+  "COMPLETED": 17330,
+  "REJECTED": 1775,
+  "NO_SHOW": 855,
+  "SCHEDULED": 40
+ },
+ "rejection_rate": 0.0887,
+ "no_show_rate_of_scheduled": 0.0469,
+ "early_arrival_rate_of_completed": 0.1585,
+ "late_arrival_rate_of_completed": 0.1026,
+ "wait_minutes_checkin_to_service": {
+  "mean": 31.4,
+  "p50": 13,
+  "p90": 91,
+  "max": 1380
+ },
+ "dwell_minutes_checkin_to_departure": {
+  "mean": 118.0,
+  "p90": 184
+ },
+ "service_minutes_mean": 70.2,
+ "dock_utilization_overall": 0.2147,
+ "dock_utilization_by_facility": {
+  "FAC-001": 0.1845,
+  "FAC-002": 0.2156,
+  "FAC-003": 0.2391,
+  "FAC-004": 0.1986,
+  "FAC-005": 0.1755,
+  "FAC-006": 0.2216,
+  "FAC-007": 0.2198,
+  "FAC-008": 0.2532,
+  "FAC-009": 0.2351,
+  "FAC-010": 0.2047
+ },
+ "hourly_dock_utilization": {
+  "0": 0.0232,
+  "1": 0.086,
+  "2": 0.1857,
+  "3": 0.2502,
+  "4": 0.2769,
+  "5": 0.2566,
+  "6": 0.2438,
+  "7": 0.249,
+  "8": 0.2727,
+  "9": 0.2891,
+  "10": 0.2785,
+  "11": 0.2683,
+  "12": 0.2282,
+  "13": 0.1762,
+  "14": 0.1363,
+  "15": 0.0889,
+  "16": 0.0431,
+  "17": 0.0137,
+  "18": 0.0024,
+  "19": 0.0003,
+  "20": 0.0,
+  "21": 0.0016,
+  "22": 0.0041,
+  "23": 0.0036
+ },
+ "exceptions_by_type_cause": {
+  "DOCK_CONGESTION/PRIOR_OVERRUN": 1267,
+  "EARLY_ARRIVAL/CARRIER_EARLY": 2746,
+  "GATE_CONGESTION/PEAK_GATE_QUEUE": 240,
+  "LATE_ARRIVAL/CARRIER_LATE": 1778,
+  "NO_SHOW/CARRIER_NO_SHOW": 855,
+  "REJECTED_NO_CAPACITY/LABOR_CAPACITY": 154,
+  "REJECTED_NO_CAPACITY/NO_DOCK_CAPACITY": 1621,
+  "YARD_FULL/YARD_CAPACITY": 19
+ },
+ "exceptions_total": 8680,
+ "events_total": 107505
+}

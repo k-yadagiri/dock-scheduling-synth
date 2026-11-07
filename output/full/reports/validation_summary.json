@@ -1,0 +1,83 @@
+{
+ "overall": "PASS",
+ "structural_checks": {
+  "primary_key_and_unique_constraints": {
+   "status": "PASS",
+   "violations": 0,
+   "examples": []
+  },
+  "foreign_key_integrity": {
+   "status": "PASS",
+   "violations": 0,
+   "examples": []
+  },
+  "types_required_enums_id_patterns": {
+   "status": "PASS",
+   "violations": 0,
+   "examples": []
+  },
+  "date_and_event_time_ordering": {
+   "status": "PASS",
+   "violations": 0,
+   "examples": []
+  },
+  "arithmetic_reconciliation_and_derived_values": {
+   "status": "PASS",
+   "violations": 0,
+   "examples": []
+  },
+  "lifecycle_transitions": {
+   "status": "PASS",
+   "violations": 0,
+   "examples": []
+  },
+  "duplicates_and_vehicle_double_booking": {
+   "status": "PASS",
+   "violations": 0,
+   "examples": []
+  }
+ },
+ "business_rule_detectors_vs_ground_truth": {
+  "OVERLAPPING_APPOINTMENT_EXCEEDS_DOCK_CAPACITY": {
+   "ground_truth": 80,
+   "detected": 80,
+   "true_positive": 80,
+   "false_positive": 0,
+   "false_negative": 0,
+   "status": "PASS"
+  },
+  "INCOMPATIBLE_LOAD_ASSIGNED": {
+   "ground_truth": 40,
+   "detected": 40,
+   "true_positive": 40,
+   "false_positive": 0,
+   "false_negative": 0,
+   "status": "PASS"
+  },
+  "CHECKIN_BEFORE_APPOINTMENT_DATE": {
+   "ground_truth": 40,
+   "detected": 40,
+   "true_positive": 40,
+   "false_positive": 0,
+   "false_negative": 0,
+   "status": "PASS"
+  },
+  "LABOR_SHIFT_NOT_AVAILABLE": {
+   "ground_truth": 40,
+   "detected": 40,
+   "true_positive": 40,
+   "false_positive": 0,
+   "false_negative": 0,
+   "status": "PASS"
+  },
+  "NO_SHOW_NOT_RECORDED": {
+   "ground_truth": 40,
+   "detected": 40,
+   "true_positive": 40,
+   "false_positive": 0,
+   "false_negative": 0,
+   "status": "PASS"
+  }
+ },
+ "note": "Structural checks run on baseline+injected data and must be clean (anomalies are semantic, not structural). Each business-rule detector must recover exactly the labelled ground-truth rows."
+}
